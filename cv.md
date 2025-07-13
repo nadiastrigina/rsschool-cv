@@ -1,4 +1,4 @@
-<img align="right" src="/images/avatar.jpg" width="200" alt="Photo">
+<img align="right" src="avatar.jpg" width="200" alt="Photo">
 
 # Nadia Strigina
 
