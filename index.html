@@ -4,77 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nadia Strigina | Frontend Developer</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Fira+Code&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Fira+Code:wght@400&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/favicon.ico" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <!-- Left Column -->
-      <aside class="sidebar">
-        <div class="photo-container">
-          <img src="images/avatar.jpg" alt="Nadia Strigina" class="photo" />
-        </div>
-
-        <section class="contacts">
-          <h2>CONTACTS</h2>
-          <ul>
-            <li>Almaty, Kazakhstan</li>
-            <li>strigina.nadezhda@gmail.com</li>
-            <li>
-              <a href="https://github.com/nadiastrigina" target="_blank"
-                >github.com/nadiastrigina</a
-              >
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo accent-element">Nadia Strigina</div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#summary" class="nav__link">Summary</a>
             </li>
-            <li>Discord: nadiastrigina</li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#code" class="nav__link">Code</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
           </ul>
-        </section>
+        </nav>
+      </div>
+    </header>
 
-        <section class="skills">
-          <h2>TECH SKILLS</h2>
-          <ul>
-            <li>JavaScript/TypeScript</li>
-            <li>Vue 3 (Composition API)</li>
-            <li>Quasar, Pinia, Vite</li>
-            <li>HTML5/CSS3/Sass</li>
-            <li>Git, GitLab, Jira</li>
-          </ul>
-        </section>
+    <main class="container main">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Hi, I'm <span class="accent-element">Nadia</span>
+          </h1>
+          <h2 class="hero__subtitle">Frontend Developer (Vue.js)</h2>
+          <p class="hero__description">
+            Specializing in building admin panels and data-intensive
+            applications with Vue.js
+          </p>
+        </div>
+        <img
+          class="hero__image"
+          src="images/avatar.jpg"
+          alt="Nadia Strigina"
+          width="280"
+          height="280"
+        />
+      </section>
 
-        <section class="languages">
-          <h2>LANGUAGES</h2>
-          <ul>
-            <li>English - A2 (Pre-Intermediate)</li>
-            <li>Russian - Native</li>
-            <li>Kazakh - Fluent</li>
-          </ul>
-        </section>
-      </aside>
-
-      <!-- Right Column -->
-      <main class="main-content">
-        <header>
-          <h1>Nadia Strigina</h1>
-          <h2>Frontend Developer (Vue.js)</h2>
-        </header>
-
-        <section class="summary">
-          <h2>SUMMARY</h2>
+      <section class="section" id="summary">
+        <h2 class="section__title accent-element">Professional Summary</h2>
+        <div class="section__content">
           <p>
             Frontend Developer with 2 years of specialized experience in
             developing admin panel solutions using Vue.js. Expertise in building
             secure, data-intensive web applications with complex client-side
             logic and dashboard interfaces.
           </p>
-        </section>
 
-        <!-- Replace the Experience section with this: -->
-        <section class="competencies">
-          <h2>CORE COMPETENCIES AND STRENGTHS</h2>
-          <ul class="competencies-list">
+          <h3>Core Competencies</h3>
+          <ul class="list-marker">
             <li>
               <strong>Problem-solving:</strong> Ability to break down complex
               tasks into manageable components
@@ -104,94 +102,180 @@
               dynamic form generation
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="skills">
-          <h2>SKILLS</h2>
-          <div class="skills-grid">
-            <div>
-              <h3>Languages</h3>
-              <ul>
-                <li>JavaScript (ES6+)</li>
-                <li>TypeScript</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Frameworks</h3>
-              <ul>
-                <li>Vue 3 (Composition API)</li>
-                <li>Quasar</li>
-              </ul>
-            </div>
-            <div>
-              <h3>State Management</h3>
-              <ul>
-                <li>Pinia</li>
-                <li>Vuex</li>
-              </ul>
-            </div>
-            <div>
-              <h3>UI Components</h3>
-              <ul>
-                <li>Vuetify</li>
-                <li>Quasar</li>
-                <li>PrimeVue</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Data Visualization</h3>
-              <ul>
-                <li>Chart.js</li>
-                <li>ApexCharts</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Tools</h3>
-              <ul>
-                <li>Vite</li>
-                <li>GitLab CI/CD</li>
-                <li>Jira</li>
-                <li>Figma</li>
-              </ul>
-            </div>
+      <section class="section" id="contacts">
+        <h2 class="section__title accent-element">Contacts</h2>
+        <ul class="contact-list">
+          <li class="contact-list__item card">
+            <span class="contact-list__icon">✉️</span>
+            <a
+              href="mailto:strigina.nadezhda@gmail.com"
+              class="contact-list__link"
+            >
+              strigina.nadezhda@gmail.com
+            </a>
+          </li>
+          <li class="contact-list__item card">
+            <span class="contact-list__icon">💻</span>
+            <a
+              href="https://github.com/nadiastrigina"
+              target="_blank"
+              class="contact-list__link"
+            >
+              github.com/nadiastrigina
+            </a>
+          </li>
+          <li class="contact-list__item card">
+            <span class="contact-list__icon">📱</span>
+            <a
+              href="https://t.me/striginanadya"
+              target="_blank"
+              class="contact-list__link"
+            >
+              Telegram: @striginanadya
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="skills">
+        <h2 class="section__title accent-element">Skills</h2>
+        <div class="skills-grid">
+          <div class="card skill-category">
+            <h3 class="skill-category__title">Languages</h3>
+            <ul class="list-marker">
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+            </ul>
           </div>
-        </section>
+          <div class="card skill-category">
+            <h3 class="skill-category__title">Frameworks</h3>
+            <ul class="list-marker">
+              <li>Vue 3 (Composition API)</li>
+            </ul>
+          </div>
+          <div class="card skill-category">
+            <h3 class="skill-category__title">State Management</h3>
+            <ul class="list-marker">
+              <li>Pinia</li>
+              <li>Vuex</li>
+            </ul>
+          </div>
+          <div class="card skill-category">
+            <h3 class="skill-category__title">UI Components</h3>
+            <ul class="list-marker">
+              <li>Vuetify</li>
+              <li>Quasar</li>
+              <li>PrimeVue</li>
+            </ul>
+          </div>
+          <div class="card skill-category">
+            <h3 class="skill-category__title">Data Visualization</h3>
+            <ul class="list-marker">
+              <li>Chart.js</li>
+              <li>ApexCharts</li>
+            </ul>
+          </div>
+          <div class="card skill-category">
+            <h3 class="skill-category__title">Tools</h3>
+            <ul class="list-marker">
+              <li>Vite</li>
+              <li>GitLab CI/CD</li>
+              <li>Jira</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section class="education">
-          <h2>EDUCATION</h2>
-          <article>
-            <h3>Kazakh National Pedagogical University</h3>
-            <p class="date">Computer Science, 2015-2019</p>
-          </article>
-        </section>
+      <section class="section" id="projects">
+        <h2 class="section__title accent-element">Projects</h2>
+        <div class="projects-grid">
+          <div class="card">
+            <h3 class="project__title">
+              RS School / Front-end Pre-school Course
+            </h3>
+            <p class="project__description">
+              A responsive, W3C-valid single-page portfolio built with semantic
+              HTML5 and modern CSS
+            </p>
+            <a
+              href="https://github.com/nadiastrigina/rsschool-cv"
+              class="button"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <section class="code-example">
-          <h2>CODE EXAMPLE</h2>
-          <pre><code>function solution(str, ending) {
-  // Returns true if string ends with specified ending
-  return str.endsWith(ending);
-}</code></pre>
-        </section>
-      </main>
-    </div>
+      <section class="section" id="code">
+        <h2 class="section__title accent-element">Code Example</h2>
+        <div class="card">
+          <p>
+            <strong>Problem Statement:</strong>
+            Write a function that accepts an array of 10 integers (between 0 and
+            9), that returns a string of those numbers in the form of a phone
+            number.
+          </p>
+          <pre class="code-example__pre">
+            <code >
+                        function createPhoneNumber(numbers) {
+              if (!Array.isArray(numbers) || numbers.length !== 10) {
+                throw new Error("Должен быть массив из 10 чисел!");
+              }
+
+              if (numbers.some((n) => n < 0 || n > 9 || !Number.isInteger(n))) {
+                throw new Error("Все элементы должны быть целыми числами от 0 до 9!");
+              }
+
+              const phoneStr = numbers.join("");
+              return phoneStr.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+            }
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2 class="section__title accent-element">Education</h2>
+        <div class="card">
+          <h3>Kazakh National Pedagogical University (Abai University)</h3>
+        </div>
+      </section>
+
+      <section class="section" id="languages">
+        <h2 class="section__title accent-element">Languages</h2>
+        <ul class="list-marker">
+          <li><strong>English:</strong> A2 (Pre-Intermediate)</li>
+          <li><strong>Russian:</strong> native speaker</li>
+        </ul>
+      </section>
+    </main>
 
     <footer class="footer">
-      <div class="footer-content">
-        <a href="https://github.com/nadiastrigina" target="_blank"
-          >© 2025 nadiastrigina</a
-        >
-        <a
-          href="https://rs.school/courses/javascript-preschool-ru"
-          target="_blank"
-        >
-          preschool course
-          <img
-            src="images/rs-school-logo.svg"
-            alt="RS School"
-            width="80"
-            style="height: auto; vertical-align: middle"
-          />
-        </a>
+      <div class="container footer__container">
+        <div class="footer__left">
+          <a href="https://github.com/nadiastrigina" target="_blank"
+            >© 2025 Nadia Strigina</a
+          >
+        </div>
+        <div>
+          <a
+            href="https://rs.school/courses/javascript-preschool-ru"
+            target="_blank"
+            class="footer__rs-link"
+          >
+            <img
+              src="images/rs-school-logo.svg"
+              alt="RS School"
+              width="100"
+              class="footer__logo"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
