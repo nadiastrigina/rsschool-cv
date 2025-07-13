@@ -37,21 +37,25 @@ Frontend Developer with 2 years of specialized experience in developing admin pa
 ## Code Example
 
 **Problem Statement:**  
-Complete the solution so that it returns true if the first argument (string) passed in ends with the 2nd argument (also a string).
+Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
 **Examples:**
 
 ```javascript
-solution("abc", "bc"); // returns true
-solution("abc", "d"); // returns false
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]); // => returns "(123) 456-7890"
 
-const validatePassword = (value) => {
-  const regex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
-  return (
-    regex.test(value) ||
-    "Password must contain 8+ chars with 1 uppercase and 1 number"
-  );
-};
+function createPhoneNumber(numbers) {
+  if (!Array.isArray(numbers) || numbers.length !== 10) {
+    throw new Error("Должен быть массив из 10 чисел!");
+  }
+
+  if (numbers.some((n) => n < 0 || n > 9 || !Number.isInteger(n))) {
+    throw new Error("Все элементы должны быть целыми числами от 0 до 9!");
+  }
+
+  const phoneStr = numbers.join("");
+  return phoneStr.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+}
 ```
 
 ## Education
